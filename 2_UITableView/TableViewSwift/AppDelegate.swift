@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Oct24
+//  TableViewSwift
 //
-//  Created by Анастасия Пучнина on 24/10/2018.
-//  Copyright © 2018 Анастасия Пучнина. All rights reserved.
+//  Created by d.taraev on 14.03.2018.
+//  Copyright © 2018 mail.ru. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }

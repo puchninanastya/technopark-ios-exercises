@@ -1,34 +1,36 @@
 //
-//  Oct24Tests.swift
-//  Oct24Tests
+//  TableViewSwiftTests.swift
+//  TableViewSwiftTests
 //
-//  Created by Анастасия Пучнина on 24/10/2018.
-//  Copyright © 2018 Анастасия Пучнина. All rights reserved.
+//  Created by d.taraev on 14.03.2018.
+//  Copyright © 2018 mail.ru. All rights reserved.
 //
 
 import XCTest
-@testable import Oct24
+@testable import TableViewSwift
 
-class Oct24Tests: XCTestCase {
-
+class TableViewSwiftTests: XCTestCase {
+    
     override func setUp() {
+        super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
     }
-
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
 }
