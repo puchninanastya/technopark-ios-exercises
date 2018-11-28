@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="TableViewSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCs-KG-3gE">
+                        <rect key="frame" x="78" y="19" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ssg-MH-eP4">
+                        <rect key="frame" x="10" y="8" width="60" height="76"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="hOR-Yg-vTm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwo-IJ-hee">
+                        <rect key="frame" x="78" y="55.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ssg-MH-eP4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-6" id="2KU-ol-vvy"/>
+                    <constraint firstItem="WCs-KG-3gE" firstAttribute="leading" secondItem="ssg-MH-eP4" secondAttribute="trailing" constant="8" symbolic="YES" id="DPK-K1-hzN"/>
+                    <constraint firstItem="ssg-MH-eP4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="HMt-Ce-ip1"/>
+                    <constraint firstItem="Iwo-IJ-hee" firstAttribute="top" secondItem="WCs-KG-3gE" secondAttribute="bottom" constant="16" id="WkG-CK-EbH"/>
+                    <constraint firstItem="ssg-MH-eP4" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="XrO-OR-Mu3"/>
+                    <constraint firstItem="WCs-KG-3gE" firstAttribute="leading" secondItem="Iwo-IJ-hee" secondAttribute="leading" id="ifL-HE-TOS"/>
+                    <constraint firstItem="WCs-KG-3gE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="lea-jy-tMJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="animeImage" destination="ssg-MH-eP4" id="zDO-8E-b1g"/>
+                <outlet property="episodesLabel" destination="Iwo-IJ-hee" id="BYu-YQ-pgG"/>
+                <outlet property="titleLabel" destination="WCs-KG-3gE" id="W2d-Mh-45S"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="176.76161919040482"/>
+        </tableViewCell>
+    </objects>
+</document>
